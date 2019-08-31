@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/tyl/file/lang/bench/slo/c♯-slo/c♯-slo.csproj": {}
+  },
+  "projects": {
+    "/home/tyl/file/lang/bench/slo/c♯-slo/c♯-slo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/tyl/file/lang/bench/slo/c♯-slo/c♯-slo.csproj",
+        "projectName": "c♯-slo",
+        "projectPath": "/home/tyl/file/lang/bench/slo/c♯-slo/c♯-slo.csproj",
+        "packagesPath": "/home/tyl/.nuget/packages/",
+        "outputPath": "/home/tyl/file/lang/bench/slo/c♯-slo/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/tyl/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

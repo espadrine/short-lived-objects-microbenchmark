@@ -1,0 +1,10 @@
+#!/usr/bin/scheme --program
+(import (rnrs base) (rnrs control) (rnrs io simple) (rnrs records syntactic))
+(define-record-type point (fields x y))
+(let ((total 0))
+  (do ((i 1000000 (- i 1)))
+    ((zero? i))
+    (let ((p (make-point 2 3)))
+      (set! total (+ total (point-x p) (point-y p)))))
+  (display total)
+  (newline))
