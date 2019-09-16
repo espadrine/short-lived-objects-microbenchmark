@@ -116,3 +116,5 @@ If we average the languages' rankings here is what we get:
 - C#: .NET Command Line Tools (2.2.401)
 - Haskell: The Glorious Glasgow Haskell Compilation System, version 8.0.2
 - Operating System: KDE neon User Edition 5.16 18.04 bionic
+
+Performed on Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz.
