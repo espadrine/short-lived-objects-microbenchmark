@@ -1,5 +1,5 @@
 SHELL=bash
-TARGETS=swift c go rust haskell ocaml dotnet java
+TARGETS=swift c go rust haskell ocaml dotnet java dart
 PROGRAMS=slo.{p6,rb,py,jl,dart,js,java,cs,hs,ml,scm,lisp,swift,go,rs,c} $(TARGETS)
 
 run: all
@@ -41,6 +41,9 @@ dotnet:
 	echo '#!/bin/bash' >dotnet
 	echo 'dotnet c♯-slo/bin/Debug/*/c♯-slo.dll' >>dotnet
 	chmod +x ./dotnet
+
+dart:
+	dart2native slo.dart -o dart
 
 clean:
 	rm $(TARGETS) slo.class Point.class
