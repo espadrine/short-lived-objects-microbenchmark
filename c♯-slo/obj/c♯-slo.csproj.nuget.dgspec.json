@@ -13,9 +13,6 @@
         "packagesPath": "/home/tyl/.nuget/packages/",
         "outputPath": "/home/tyl/file/lang/bench/slo/c♯-slo/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "/home/tyl/.nuget/NuGet/NuGet.Config"
         ],
@@ -47,10 +44,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,4 @@
-//usr/bin/env gcc -o /tmp/a.out $0; /tmp/a.out; rm /tmp/a.out; exit $?
+//usr/bin/env gcc -O -o /tmp/a.out $0; /tmp/a.out; rm /tmp/a.out; exit $?
 #include <stdio.h>
 typedef struct Point {
   int x;

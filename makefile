@@ -1,6 +1,6 @@
 SHELL=bash
-TARGETS=swift c go rust haskell ocaml dotnet java dart
-PROGRAMS=slo.{p6,rb,py,jl,dart,js,java,cs,hs,ml,scm,lisp,swift,go,rs,c} $(TARGETS)
+TARGETS=swift c go rust haskell ocaml dotnet java dart crystal
+PROGRAMS=slo.{p6,rb,cr,py,jl,dart,js,java,cs,hs,ml,scm,lisp,swift,go,rs,c} $(TARGETS)
 
 run: all
 	@for prog in $(PROGRAMS); do \
@@ -44,6 +44,9 @@ dotnet:
 
 dart:
 	dart2native slo.dart -o dart
+
+crystal:
+	crystal build slo.cr -o crystal
 
 clean:
 	rm $(TARGETS) slo.class Point.class
